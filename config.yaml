@@ -1,0 +1,49 @@
+schema_version: 3
+campaign:
+  name: "test8"
+  title: "Test8"
+  description: ""
+  instigator: "297915765"
+  repo_id: 1354958029
+  language: "en"
+  license: "CC-BY-4.0"
+automation:
+  central_repository: "lets-encode/instigation"
+  ref: "main"
+  path: "scripts/coordinator.ts"
+source:
+  kind: "facsimile"
+  images:
+    - "sources/img/01.jpg"
+    - "sources/img/02.jpg"
+  header:
+    title: "Blume und Duft"
+    composer: ""
+    publisher: ""
+    date: ""
+  rights_acknowledged: "1"
+pieces:
+  - id: "piece-01"
+    kind: "facsimile"
+    path: "sources/piece-01/score.mei"
+    zones:
+      - { surface: 1, ulx: 15, uly: 14, lrx: 1318, lry: 1149 }
+    header:
+      title: "Blume und Duft"
+      composer: ""
+  - id: "piece-02"
+    kind: "facsimile"
+    path: "sources/piece-02/score.mei"
+    zones:
+      - { surface: 1, ulx: 15, uly: 1161, lrx: 1307, lry: 1714 }
+      - { surface: 2, ulx: 0, uly: 0, lrx: 1318, lry: 1734 }
+    header:
+      title: "Blume und Duft"
+      composer: ""
+fragmentation:
+  strategy: "by-piece"
+validation:
+  required_validations: 1
+  pass_threshold: 1
+locking:
+  stale_after_minutes: 120
